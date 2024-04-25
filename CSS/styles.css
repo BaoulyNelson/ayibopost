@@ -1,0 +1,241 @@
+body {
+  font-family: Arial, sans-serif; /* Police de caractères par défaut */
+  line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+   padding: 0; /* Supprime les espacements internes par défaut */
+  background-color: #f7f7f7; /* Couleur de fond */
+  color: #333; /* Couleur de texte principale */
+}
+
+.container {
+  width: 80%; /* Largeur du contenu principal */
+  margin: 0 auto; /* Centre le contenu horizontalement */
+  padding: 20px; /* Espacement interne du contenu */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0; /* Supprime les marges supérieures par défaut pour les titres */
+}
+
+p {
+  margin-bottom: 1.5em; /* Espacement entre les paragraphes */
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+  background-color: #333; /* Changement de la couleur de fond */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre légère */
+  color: white; /* Texte en blanc */
+  position: fixed; /* Fixer la navbar en haut de la page pour une navigation facile */
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px; /* Ajout de rembourrage pour un meilleur espacement */
+}
+
+/* Styles pour le contenu principal */
+main {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.login-button {
+  margin-bottom: 50px;
+
+  display: inline-block;
+  padding: 5px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.login-button .fas.fa-user {
+  color: #333;
+  font-size: 20px;
+}
+
+/* Styles pour le panneau latéral gauche */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #f4f4f4;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+
+}
+
+* Style pour les liens dans le panneau latéral */ .sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul {
+  list-style: none; /* Supprime les puces des listes */
+}
+
+.sidebar ul li a {
+  color: black !important;
+  text-decoration: none;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.3s ease;
+}
+
+
+.sidebar ul li:hover {
+  background-color: gray;
+  /* Couleur de fond au survol */
+}
+
+
+
+.sidebar ul li a:hover {
+  color: white;
+}
+
+/* Style pour afficher le panneau latéral */
+.sidebar.show {
+  left: 0;
+  /* Affiche le panneau latéral en position gauche */
+}
+
+/* Style pour l'icône de fermeture dans un cercle */
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* Crée un cercle */
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* Curseur pointer pour indiquer que c'est cliquable */
+}
+
+.search-form,
+.search-form input,
+.search-message {
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: red
+}
+
+.social-icons {
+  font-size: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px; /* Espacement de 10 pixels vers la droite */
+}
+
+
+.search-icon {
+  cursor: pointer;
+  /* Changement du curseur en curseur pointeur */
+  margin-right: 10px;
+  /* Marge entre les icônes */
+}
+
+/* Style du champ de saisie */
+input[type="text"] {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: 2px solid #ccc;
+  /* Bordure grise */
+  border-radius: 5px;
+  /* Coins arrondis */
+  outline: none;
+  /* Suppression de la bordure bleue lors du focus */
+}
+
+/* Style du texte de placeholder */
+::placeholder {
+  color: #999;
+  /* Couleur grise pour le placeholder */
+}
+
+/* Style lorsqu'il est en focus */
+input[type="text"]:focus {
+  border-color: #66afe9;
+  /* Bordure bleue lors du focus */
+}
+
+.sub-menu {
+  display: none;
+}
+
+.toggle-icon {
+  margin-right: 5px;
+}
+
+.menu-icon {
+  margin-right: 30px;
+  /* Ajustez cette valeur selon vos besoins */
+  width: 40px;
+  /* Largeur du cercle */
+  height: 40px;
+  /* Hauteur du cercle */
+  border-radius: 50%;
+  /* Pour créer un cercle */
+  background-color: red;
+  /* Couleur de fond du cercle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+#ayibopost {
+  color: red;
+  /* Couleur du texte */
+  font-family: 'Algerian', sans-serif;
+  /* Police de caractères de Google Fonts */
+}
+
+.menu-icon i {
+  color: white;
+  /* Couleur de l'icône */
+  font-size: 24px;
+  /* Taille de l'icône */
+
+}
+
+
+
+.close-icon i {
+  color: white;
+  /* Couleur de l'icône */
+  font-size: 20px;
+  /* Taille de l'icône */
+}
+
+/* Style pour le message de recherche */
+.search-message {
+  color: red;
+  /* Couleur grise pour le message */
+  font-size: 14px;
+  /* Taille de police */
+  margin-top: 5px;
+  /* Espacement avec le champ de recherche */
+}

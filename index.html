@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css"> <!-- Inclure votre fichier de styles CSS -->
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Inclure Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Interface Ayibopost</title>
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <div class="logo" id="ayibopost">Ayibopost</div>
+        <div class="search-icon">
+            <i class="fas fa-search"></i> <!-- Icône de recherche -->
+            
+        </div>
+<!-- Formulaire de recherche (initialisé comme caché) -->
+<form class="search-form" style="display: none;">
+    <input type="text" placeholder="Rechercher...">
+    <!-- Icône de croix pour vider la recherche -->
+    <span class="clear-search-icon"><i class="fas fa-times-circle"></i></span>
+
+</form>
+<!-- Ajout d'un paragraphe pour afficher le message -->
+<p class="search-message"></p>
+
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i> <!-- Icône de menu hamburger -->
+        </div>
+    </nav>
+
+
+    <!-- Panneau latéral gauche -->
+    <div id="sidebar" class="sidebar">
+        <div class="close-icon">
+            <i class="fas fa-times"></i> <!-- Icône de fermeture -->
+        </div>
+        <p id="ayibopost">Ayibopost</p>
+        <div class="social-icons">
+            <a href="lien_vers_votre_page_facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="lien_vers_votre_page_twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="lien_vers_votre_page_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="lien_vers_votre_chaine_youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+            <!-- Ajoutez d'autres icônes de médias sociaux au besoin -->
+        </div>
+<hr>
+
+<ul>
+    <li><a href="#" class="lien" data-contenu="accueil">Accueil</a></li>
+    <li><a href="#" class="lien" data-contenu="societe">Société</a></li>
+    <li><a href="#" class="lien" data-contenu="politique">Politique</a></li>
+    <li><a href="#" class="lien" data-contenu="opinions">Opinions</a></li>
+    <li><a href="#" class="lien" data-contenu="explorations">Explorations</a></li>
+    <li><a href="#" class="lien" data-contenu="podcast">Podcast</a></li>
+    <li class="parent">
+        <span class="toggle-icon">▼</span>
+        <a href=""> Langues</a>
+        <ul class="sub-menu">
+            <li><a href="">Français</a></li>
+            <li><a href="">English</a></li>
+            <li><a href="">Español</a></li>
+            <!-- Ajoutez d'autres langues selon vos besoins -->
+        </ul>
+    </li>
+</ul>
+        <!-- icone "Log In" -->
+<hr>
+<a href="inscription.html" class="login-button">
+    <i class="fas fa-user"></i>
+</a>
+    </div>
+
+
+
+<main>
+    <div id="contenu_accueil" class="contenu" style="display: none;">
+        Contenu de la page d'accueil
+    </div>
+    
+    <div id="contenu_societe" class="contenu" style="display: none;">
+        Contenu de la page sur la société
+    </div>
+    
+    <div id="contenu_politique" class="contenu" style="display: none;">
+        Contenu de la page sur la politique
+    </div>
+    
+    <div id="contenu_opinions" class="contenu" style="display: none;">
+        Contenu de la page sur les opinions
+    </div>
+    
+    <div id="contenu_explorations" class="contenu" style="display: none;">
+        Contenu de la page sur les explorations
+    </div>
+    
+    <div id="contenu_podcast" class="contenu" style="display: none;">
+        Contenu de la page sur le podcast
+    </div>
+    </main>
+<footer>
+   
+    <div class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <div class="social-icons">
+        <a href="lien_vers_votre_page_facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="lien_vers_votre_page_twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="lien_vers_votre_page_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="lien_vers_votre_chaine_youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+        <!-- Ajoutez d'autres icônes de médias sociaux au besoin -->
+    </div>
+</footer>
+
+    <script src="SCRIPT/login.js"></script>
+    <script src="SCRIPT/script.js"></script> <!-- Inclure votre fichier de script JavaScript -->
+
+</body>
+
+</html>

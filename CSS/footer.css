@@ -1,0 +1,38 @@
+/* Style du footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0; /* Réduire l'espacement à 5 pixels en haut et en bas */
+    width: 100%; /* Utiliser toute la largeur de la fenêtre */
+    position: absolute; /* Positionner le footer en bas de la fenêtre */
+    bottom: 0; /* Aligner le footer au bas de la fenêtre */
+    left: 0; /* Aligner le footer complètement à gauche */
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: -50px; /* Commence en dehors de la fenêtre */
+    right: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, bottom 0.3s; /* Ajoute la transition pour une apparence fluide */
+}
+
+.scroll-to-top:hover {
+    background-color: #cc0000;
+}
+
+.scroll-to-top i {
+    font-size: 24px;
+}
+
+.scroll-to-top.show {
+    bottom: 20px; /* Affiche le bouton lorsqu'il est visible dans la fenêtre */
+}
