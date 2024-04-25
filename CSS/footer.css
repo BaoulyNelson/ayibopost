@@ -4,7 +4,7 @@ footer {
     color: #fff;
     padding: 5px 0; /* Réduire l'espacement à 5 pixels en haut et en bas */
     width: 100%; /* Utiliser toute la largeur de la fenêtre */
-    position: absolute; /* Positionner le footer en bas de la fenêtre */
+    position: fixed; /* Positionner le footer en bas de la fenêtre */
     bottom: 0; /* Aligner le footer au bas de la fenêtre */
     left: 0; /* Aligner le footer complètement à gauche */
 }

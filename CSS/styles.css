@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
+  text-align: justify;
   margin-bottom: 1.5em; /* Espacement entre les paragraphes */
 }
 
@@ -41,12 +42,15 @@ main {
   margin-top: 100px;
   margin-bottom: 50px;
 }
-
 .login-button {
   margin-bottom: 50px;
-
-  display: inline-block;
+  display: flex;
+  margin-left: 50px; /* Décalage vers la droite */
+  align-items: center;
+  justify-content: center;
   padding: 5px;
+  width: 50px; /* Définir une largeur fixe pour le bouton */
+  height: 50px; /* Définir une hauteur fixe pour le bouton */
   border: 2px solid #333;
   border-radius: 50%;
   background-color: red;
@@ -56,6 +60,7 @@ main {
   color: #333;
   font-size: 20px;
 }
+
 
 /* Styles pour le panneau latéral gauche */
 .sidebar {
@@ -142,10 +147,22 @@ main {
   font-size: 20px;
 }
 
-.social-icons a {
+nav .social-icons a,
+footer .social-icons a {
   margin-right: 10px; /* Espacement de 10 pixels vers la droite */
 }
 
+.sidebar .social-icons a {
+  color: black; /* Couleur noire pour les icônes sociales dans la barre de navigation */
+}
+
+footer .social-icons a {
+  color: white; /* Couleur blanche pour les icônes sociales dans le pied de page */
+}
+
+footer .social-icons {
+  text-align: center; /* Centre le contenu horizontalement */
+}
 
 .search-icon {
   cursor: pointer;
@@ -238,4 +255,19 @@ input[type="text"]:focus {
   /* Taille de police */
   margin-top: 5px;
   /* Espacement avec le champ de recherche */
+}
+
+.contenu {
+  text-align: center;
+  margin-left: 10px; /* Décalage de 250px vers la droite */
+  overflow-x: hidden; /* Empêcher le débordement horizontal */
+ 
+}
+
+.contenu h2 {
+  text-align: center;
+}
+.contenu h2 {
+  background-color: #e0e0e0; /* Couleur d'arrière-plan des titres */
+  padding: 10px; /* Ajout de marge intérieure pour plus de visibilité */
 }

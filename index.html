@@ -19,17 +19,17 @@
         <div class="logo" id="ayibopost">Ayibopost</div>
         <div class="search-icon">
             <i class="fas fa-search"></i> <!-- Icône de recherche -->
-            
-        </div>
-<!-- Formulaire de recherche (initialisé comme caché) -->
-<form class="search-form" style="display: none;">
-    <input type="text" placeholder="Rechercher...">
-    <!-- Icône de croix pour vider la recherche -->
-    <span class="clear-search-icon"><i class="fas fa-times-circle"></i></span>
 
-</form>
-<!-- Ajout d'un paragraphe pour afficher le message -->
-<p class="search-message"></p>
+        </div>
+        <!-- Formulaire de recherche (initialisé comme caché) -->
+        <form class="search-form" style="display: none;">
+            <input type="text" placeholder="Rechercher...">
+            <!-- Icône de croix pour vider la recherche -->
+            <span class="clear-search-icon"><i class="fas fa-times-circle"></i></span>
+
+        </form>
+        <!-- Ajout d'un paragraphe pour afficher le message -->
+        <p class="search-message"></p>
 
         <div class="menu-icon">
             <i class="fas fa-bars"></i> <!-- Icône de menu hamburger -->
@@ -50,73 +50,83 @@
             <a href="lien_vers_votre_chaine_youtube" target="_blank"><i class="fab fa-youtube"></i></a>
             <!-- Ajoutez d'autres icônes de médias sociaux au besoin -->
         </div>
-<hr>
+        <hr>
 
-<ul>
-    <li><a href="#" class="lien" data-contenu="accueil">Accueil</a></li>
-    <li><a href="#" class="lien" data-contenu="societe">Société</a></li>
-    <li><a href="#" class="lien" data-contenu="politique">Politique</a></li>
-    <li><a href="#" class="lien" data-contenu="opinions">Opinions</a></li>
-    <li><a href="#" class="lien" data-contenu="explorations">Explorations</a></li>
-    <li><a href="#" class="lien" data-contenu="podcast">Podcast</a></li>
-    <li class="parent">
-        <span class="toggle-icon">▼</span>
-        <a href=""> Langues</a>
-        <ul class="sub-menu">
-            <li><a href="">Français</a></li>
-            <li><a href="">English</a></li>
-            <li><a href="">Español</a></li>
-            <!-- Ajoutez d'autres langues selon vos besoins -->
+        <ul>
+            <li><a href="#" class="lien" data-contenu="accueil">Accueil</a></li>
+            <li><a href="#" class="lien" data-contenu="societe">Société</a></li>
+            <li><a href="#" class="lien" data-contenu="politique">Politique</a></li>
+            <li><a href="#" class="lien" data-contenu="opinions">Opinions</a></li>
+            <li><a href="#" class="lien" data-contenu="explorations">Explorations</a></li>
+            <li><a href="#" class="lien" data-contenu="podcast">Podcast</a></li>
+            <li class="parent">
+                <span class="toggle-icon">▼</span>
+                <a href=""> Langues</a>
+                <ul class="sub-menu">
+                    <li><a href="">Français</a></li>
+                    <li><a href="">English</a></li>
+                    <li><a href="">Español</a></li>
+                    <!-- Ajoutez d'autres langues selon vos besoins -->
+                </ul>
+            </li>
         </ul>
-    </li>
-</ul>
         <!-- icone "Log In" -->
-<hr>
-<a href="inscription.html" class="login-button">
-    <i class="fas fa-user"></i>
-</a>
+        <hr>
+        <a href="inscription.html" class="login-button">
+            <i class="fas fa-user"></i>
+        </a>
     </div>
 
 
 
-<main>
-    <div id="contenu_accueil" class="contenu" style="display: none;">
-        Contenu de la page d'accueil
-    </div>
-    
-    <div id="contenu_societe" class="contenu" style="display: none;">
-        Contenu de la page sur la société
-    </div>
-    
-    <div id="contenu_politique" class="contenu" style="display: none;">
-        Contenu de la page sur la politique
-    </div>
-    
-    <div id="contenu_opinions" class="contenu" style="display: none;">
-        Contenu de la page sur les opinions
-    </div>
-    
-    <div id="contenu_explorations" class="contenu" style="display: none;">
-        Contenu de la page sur les explorations
-    </div>
-    
-    <div id="contenu_podcast" class="contenu" style="display: none;">
-        Contenu de la page sur le podcast
-    </div>
+    <main>
+        <div id="contenu_accueil" class="contenu" style="display: block;">
+            <h2>Contenu de la page d'accueil</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo pariatur error vero dolorem ad accusantium
+                commodi, ea quos odio distinctio perferendis rerum atque, aspernatur similique dolorum cumque ut
+                voluptate natus debitis. Sequi commodi dolorem aut unde suscipit saepe amet perferendis voluptatem
+                accusantium voluptates consequuntur molestias assumenda quibusdam recusandae quam quaerat quod soluta, a
+                necessitatibus! Libero aliquid magni officiis quo possimus doloribus ab nobis fugit? Quis nostrum saepe
+                accusamus? Eligendi quibusdam maiores ipsam dicta modi non ipsum, velit, molestiae repellat error
+                suscipit. Quod obcaecati, eaque doloremque qui earum perferendis exercitationem minima molestiae
+                quibusdam nulla est nostrum dolorum voluptatibus beatae? Enim in consequatur, quo animi magni
+                consectetur culpa expedita minima, voluptas qui saepe corporis, deleniti harum architecto soluta facere
+                quod nobis fugiat.</p>
+        </div>
+
+        <div id="contenu_societe" class="contenu" style="display: none;">
+            <h2>Contenu de la page sur la société</h2>
+        </div>
+
+        <div id="contenu_politique" class="contenu" style="display: none;">
+            <h2>Contenu de la page sur la politique</h2>
+        </div>
+
+        <div id="contenu_opinions" class="contenu" style="display: none;">
+            <h2>Contenu de la page sur les opinions</h2>
+        </div>
+
+        <div id="contenu_explorations" class="contenu" style="display: none;">
+            <h2>Contenu de la page sur les explorations</h2>
+        </div>
+
+        <div id="contenu_podcast" class="contenu" style="display: none;">
+            <h2>Contenu de la page sur le podcast</h2>
+        </div>
     </main>
-<footer>
-   
-    <div class="scroll-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </div>
-    <div class="social-icons">
-        <a href="lien_vers_votre_page_facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="lien_vers_votre_page_twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="lien_vers_votre_page_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="lien_vers_votre_chaine_youtube" target="_blank"><i class="fab fa-youtube"></i></a>
-        <!-- Ajoutez d'autres icônes de médias sociaux au besoin -->
-    </div>
-</footer>
+    <footer>
+
+        <div class="scroll-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="social-icons">
+            <a href="lien_vers_votre_page_facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="lien_vers_votre_page_twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="lien_vers_votre_page_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="lien_vers_votre_chaine_youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+            <!-- Ajoutez d'autres icônes de médias sociaux au besoin -->
+        </div>
+    </footer>
 
     <script src="SCRIPT/login.js"></script>
     <script src="SCRIPT/script.js"></script> <!-- Inclure votre fichier de script JavaScript -->
