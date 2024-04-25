@@ -4,21 +4,7 @@ body {
    padding: 0; /* Supprime les espacements internes par défaut */
   background-color: #f7f7f7; /* Couleur de fond */
   color: #333; /* Couleur de texte principale */
-}
-
-.container {
-  width: 80%; /* Largeur du contenu principal */
-  margin: 0 auto; /* Centre le contenu horizontalement */
-  padding: 20px; /* Espacement interne du contenu */
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0; /* Supprime les marges supérieures par défaut pour les titres */
-}
-
-p {
-  text-align: justify;
-  margin-bottom: 1.5em; /* Espacement entre les paragraphes */
+  overflow-x: hidden;
 }
 
 /* Styles pour la barre de navigation */
@@ -37,11 +23,6 @@ p {
   padding: 10px 20px; /* Ajout de rembourrage pour un meilleur espacement */
 }
 
-/* Styles pour le contenu principal */
-main {
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
 .login-button {
   margin-bottom: 50px;
   display: flex;
@@ -60,6 +41,7 @@ main {
   color: #333;
   font-size: 20px;
 }
+
 
 
 /* Styles pour le panneau latéral gauche */
@@ -98,15 +80,20 @@ main {
 
 
 .sidebar ul li:hover {
-  background-color: gray;
-  /* Couleur de fond au survol */
+  background-color: gray; /* Couleur de fond au survol */
 }
 
-
-
-.sidebar ul li a:hover {
-  color: white;
+.sidebar ul li:hover a {
+  color: white; /* Couleur du texte des liens au survol */
 }
+
+.sidebar ul li a {
+  display: block; /* Assure que les liens remplissent toute la largeur de l'élément li */
+  text-decoration: none; /* Supprime la soulignement par défaut des liens */
+  color: black; /* Couleur du texte par défaut */
+
+}
+
 
 /* Style pour afficher le panneau latéral */
 .sidebar.show {
@@ -131,22 +118,6 @@ main {
   /* Curseur pointer pour indiquer que c'est cliquable */
 }
 
-.search-form,
-.search-form input,
-.search-message {
-  text-align: center;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: red
-}
-
-.social-icons {
-  font-size: 20px;
-}
-
 nav .social-icons a,
 footer .social-icons a {
   margin-right: 10px; /* Espacement de 10 pixels vers la droite */
@@ -156,14 +127,6 @@ footer .social-icons a {
   color: black; /* Couleur noire pour les icônes sociales dans la barre de navigation */
 }
 
-footer .social-icons a {
-  color: white; /* Couleur blanche pour les icônes sociales dans le pied de page */
-}
-
-footer .social-icons {
-  text-align: center; /* Centre le contenu horizontalement */
-}
-
 .search-icon {
   cursor: pointer;
   /* Changement du curseur en curseur pointeur */
@@ -171,31 +134,6 @@ footer .social-icons {
   /* Marge entre les icônes */
 }
 
-/* Style du champ de saisie */
-input[type="text"] {
-  width: 100px;
-  padding: 10px;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  border: 2px solid #ccc;
-  /* Bordure grise */
-  border-radius: 5px;
-  /* Coins arrondis */
-  outline: none;
-  /* Suppression de la bordure bleue lors du focus */
-}
-
-/* Style du texte de placeholder */
-::placeholder {
-  color: #999;
-  /* Couleur grise pour le placeholder */
-}
-
-/* Style lorsqu'il est en focus */
-input[type="text"]:focus {
-  border-color: #66afe9;
-  /* Bordure bleue lors du focus */
-}
 
 .sub-menu {
   display: none;
@@ -223,7 +161,7 @@ input[type="text"]:focus {
   color: white;
 }
 
-#ayibopost {
+#addicted {
   color: red;
   /* Couleur du texte */
   font-family: 'Algerian', sans-serif;
@@ -257,17 +195,15 @@ input[type="text"]:focus {
   /* Espacement avec le champ de recherche */
 }
 
-.contenu {
-  text-align: center;
-  margin-left: 10px; /* Décalage de 250px vers la droite */
-  overflow-x: hidden; /* Empêcher le débordement horizontal */
- 
+
+.navbar-brand {
+  width: 10%;
+  height: auto;
+  padding: 0.5rem; /* Ajoute un peu d'espace autour du cercle */
 }
 
-.contenu h2 {
-  text-align: center;
-}
-.contenu h2 {
-  background-color: #e0e0e0; /* Couleur d'arrière-plan des titres */
-  padding: 10px; /* Ajout de marge intérieure pour plus de visibilité */
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Rend l'image circulaire */
 }

@@ -1,0 +1,77 @@
+
+/* Styles pour le contenu principal */
+main {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    overflow-y: auto;
+  }
+
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0; /* Supprime les marges supérieures par défaut pour les titres */
+  }
+  /* Style général des articles */
+.article {
+  width: 100%; /* Les articles occupent toute la largeur de leur conteneur */
+  margin-bottom: 20px; /* Marge en bas de chaque article */
+}
+
+/* Media query pour les grands écrans */
+@media only screen and (min-width: 768px) {
+  .articles-container {
+    display: grid; /* Utilise une disposition en grille */
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
+    gap: 20px; /* Espacement entre les colonnes */
+  }
+}
+
+/* Media query pour les petits écrans */
+@media only screen and (max-width: 767px) {
+  .articles-container {
+    display: block; /* Affiche les articles les uns en dessous des autres */
+  }
+}
+
+  
+  p {
+    text-align: justify;
+    margin-bottom: 1.5em; /* Espacement entre les paragraphes */
+    text-justify: distribute;
+     
+  }
+
+  
+.contenu {
+    text-align: center;
+    margin-left: 10px; /* Décalage de 250px vers la droite */
+    overflow-x: hidden; /* Empêcher le débordement horizontal */
+   display: none;
+  }
+  
+ 
+  .contenu h2 {
+    padding: 10px;
+    color: #227dea;
+    text-align: center;
+    background-color: #e0e0e0; /* Couleur d'arrière-plan des titres */
+    font-weight: bold;
+    display: inline-block; /* Permet au fond de s'adapter uniquement à la largeur du texte */
+}
+
+
+  .content {
+    display: none;
+    margin: 10px auto;
+    text-align: justify;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+
+
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+  
