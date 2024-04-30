@@ -36,8 +36,19 @@ main {
     text-align: left;
     margin-bottom: 1.5em; /* Espacement entre les paragraphes */
     text-justify: distribute;
+    max-width: 600px;
+    margin: 0 auto;
      
   }
+
+          /* Styles pour les posts */
+.contenu {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+
 
   
 .contenu {

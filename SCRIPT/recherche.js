@@ -1,72 +1,46 @@
-// Sélection de l'icône de recherche et du formulaire
-const searchIcon = document.getElementById('searchIcon');
-const searchForm = document.getElementById('searchForm');
-const searchInput = document.getElementById('mySearch'); // Sélection du champ de recherche
-const menuIcon = document.querySelector('.menu-icon'); // Sélection de l'icône de menu hamburger
-const sidebar = document.getElementById('sidebar'); // Sélection du sidebar
-const closeIcon = document.querySelector('.close-icon'); // Sélection de l'icône de fermeture du sidebar
-const links = document.querySelectorAll('.sidebar ul li'); // Sélection des liens dans le sidebar
-const message = document.getElementById('message'); // Sélection de l'élément pour afficher le message
+document.addEventListener("DOMContentLoaded", function() {
+    const searchIcon = document.getElementById('searchIcon');
+    const searchForm = document.getElementById('searchForm');
+    const mySearch = document.getElementById('mySearch');
+    const message = document.getElementById('message');
+    const links = document.querySelectorAll('.lien');
+    let foundLinks = 0;
 
-// Fonction pour ouvrir le sidebar
-function openSidebar() {
-    sidebar.classList.add('show');
-}
-
-// Fonction pour fermer le sidebar
-function closeSidebar() {
-    sidebar.classList.remove('show');
-}
-
-// Ajout d'un écouteur d'événements au clic sur l'icône de recherche
-searchIcon.addEventListener('click', () => {
-    // Inversion de la visibilité du formulaire
-    if (searchForm.style.display === 'none') {
-        searchForm.style.display = 'block';
-        searchInput.focus(); // Placer le curseur à l'intérieur du champ de recherche
-    } else {
-        searchForm.style.display = 'none';
-    }
-});
-
-// Ajout d'un écouteur d'événements au clic sur l'icône de menu hamburger
-menuIcon.addEventListener('click', () => {
-    // Ouvre le sidebar
-    openSidebar();
-});
-
-// Ajout d'un écouteur d'événements au clic sur l'icône de fermeture du sidebar
-closeIcon.addEventListener('click', () => {
-    // Ferme le sidebar
-    closeSidebar();
-});
-
-// Ajout d'un écouteur d'événements pour chaque lien dans le sidebar
-links.forEach(link => {
-    link.addEventListener('click', () => {
-        // Ferme le sidebar lorsqu'un lien est cliqué
-        closeSidebar();
-    });
-});
-
-// Ajout d'un écouteur d'événements pour le champ de recherche pour filtrer les liens en temps réel
-searchInput.addEventListener('input', () => {
-    const filter = searchInput.value.trim().toUpperCase(); // Convertit la saisie en majuscules et supprime les espaces avant et après
-    let found = 0; // Initialise le compteur de résultats trouvés à 0
-
-    links.forEach(link => {
-        if (link.innerText.toUpperCase().indexOf(filter) > -1) {
-            link.style.display = ''; // Affiche le lien s'il correspond au filtre
-            found++; // Incrémente le compteur de résultats trouvés
+    // Fonction pour afficher ou masquer le formulaire de recherche
+    searchIcon.addEventListener('click', function() {
+        if (searchForm.style.display === 'block') {
+            searchForm.style.display = 'none';
         } else {
-            link.style.display = 'none'; // Masque le lien s'il ne correspond pas au filtre
+            searchForm.style.display = 'block';
+            mySearch.focus(); // Activer le focus sur la zone de recherche
         }
     });
 
-    // Affichage du message indiquant le nombre de liens trouvés
-    if (filter !== '') {
-        message.innerText = `${found} lien(s) trouvé(s)`;
-    } else {
-        message.innerText = ''; // Efface le message s'il n'y a pas de saisie dans le champ de recherche
-    }
+    // Fonction pour filtrer les liens en fonction de la recherche
+    mySearch.addEventListener('input', function() {
+        const searchText = mySearch.value.trim().toLowerCase();
+        foundLinks = 0;
+
+        if (searchText === '') {
+            // Réinitialiser l'affichage des liens si la recherche est vide
+            links.forEach(function(link) {
+                link.parentElement.style.display = 'block';
+            });
+            message.textContent = ''; // Cacher le message
+            return; // Sortir de la fonction
+        }
+
+        links.forEach(function(link) {
+            const linkText = link.textContent.toLowerCase();
+            if (linkText.includes(searchText)) {
+                link.parentElement.style.display = 'block';
+                foundLinks++;
+            } else {
+                link.parentElement.style.display = 'none';
+            }
+        });
+
+        // Afficher le nombre de liens trouvés
+        message.textContent = foundLinks + " lien(s) trouvé(s)";
+    });
 });

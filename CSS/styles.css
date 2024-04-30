@@ -87,37 +87,46 @@ body {
     /* Espacement avec le champ de recherche */
   }
   
-  /* Par défaut, le logo occupe 10% de la largeur de l'écran */
+ /* Par défaut, le logo occupe 10% de la largeur de l'écran */
+.navbar-brand {
+  width: 10vw;
+  height: auto;
+  padding: 0.5rem;
+}
+
+/* Pour les écrans de taille moyenne, augmentez la taille à 15% */
+@media (min-width: 768px) {
   .navbar-brand {
-    width: 10vw;
-    height: auto;
-    padding: 0.5rem;
+    width: 15vw;
   }
-  
-  /* Pour les écrans de taille moyenne, augmentez la taille à 15% */
-  @media (min-width: 768px) {
-    .navbar-brand {
-      width: 15vw;
-    }
+}
+
+/* Pour les grands écrans, augmentez encore la taille à 20% */
+@media (min-width: 992px) {
+  .navbar-brand {
+    width: 20vw;
   }
-  
-  /* Pour les grands écrans, augmentez encore la taille à 20% */
-  @media (min-width: 992px) {
-    .navbar-brand {
-      width: 20vw;
-    }
+}
+
+/* Pour les très grands écrans, augmentez encore la taille à 25% */
+@media (min-width: 1200px) {
+  .navbar-brand {
+    width: 25vw;
   }
-  
-  /* Pour les très grands écrans, augmentez encore la taille à 25% */
-  @media (min-width: 1200px) {
-    .navbar-brand {
-      width: 25vw;
-    }
-  }
-  
+}
+
+/* Augmentez la taille de l'image pour les petits écrans */
+@media (max-width: 767px) {
   .navbar-brand img {
-    max-width: 100%;
+    width: 100px; /* Taille en pixels ajustée selon vos besoins */
     height: auto;
-    border-radius: 50%;
   }
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
   

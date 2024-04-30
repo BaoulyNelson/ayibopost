@@ -70,14 +70,15 @@
             <li><a href="#" class="lien" data-contenu="sport">Sports</a></li>
             <li class="parent">
                 <span class="toggle-icon">▼</span>
-                <a href=""> Langues</a>
-                <ul class="sub-menu">
-                    <li><a href="">Français</a></li>
-                    <li><a href="">English</a></li>
-                    <li><a href="">Español</a></li>
+                <a href="#"> Langues</a>
+                <ul class="sub-menu" style="display: none;">
+                    <li><a href="#" class="lien" data-contenu="langue">Français</a></li>
+                    <li><a href="#" class="lien" data-contenu="langue">Anglais</a></li>
+                    <li><a href="#" class="lien" data-contenu="langue">Espagnol</a></li>
                     <!-- Ajoutez d'autres langues selon vos besoins -->
                 </ul>
             </li>
+            
         </ul>
         <!-- icone "Log In" -->
         <hr>
@@ -124,6 +125,7 @@
         <div id="contenu_opinions" class="contenu" style="display: none;">
             <h2>Contenu de la page sur les opinions</h2>
             <p class="justify">La page sur les opinions offre une plateforme pour exprimer une variété de points de vue sur des sujets variés, allant de la politique à la culture en passant par les questions sociales et environnementales.</p>
+       
         </div>
         
         <article id="contenu_explorations" class="contenu" style="display: none;">
@@ -146,7 +148,10 @@
 
         </div>
 
-
+        <div id="contenu_langue" class="contenu" style="display: none;">
+            <h2>En quelle langue veu-tu traduire le site?</h2>
+            <p class="justify"> Langues</p>
+        </div>
     </main>
     <footer class="footer bg-dark text-light text-center py-3">
         <div class="contact-info">
@@ -169,10 +174,14 @@
         </div>
     </footer>
     <script src="SCRIPT/dateFooter.js"></script>
-    <script src="SCRIPT/sidebar.js"></script>
+    <!-- <script src="SCRIPT/sidebar.js"></script> -->
     <script src="SCRIPT/recherche.js"></script>
     <script src="SCRIPT/contenu.js"></script>
-    <script src="SCRIPT/script.js"></script> <!-- Inclure votre fichier de script JavaScript -->
+    <script src="SCRIPT/scroler.js"></script> 
+    <script src="SCRIPT/toggle.js"></script>
+    <script src="SCRIPT/soumenu.js"></script>
+    <!-- <script src="SCRIPT/script.js"></script> -->
+     <!-- Inclure votre fichier de script JavaScript -->
   
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
