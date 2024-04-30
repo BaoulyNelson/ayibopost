@@ -53,11 +53,23 @@
       a:hover {
         text-decoration: underline;
       }
+      .close-button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+      }
       
   </style>
 </head>
 <body>
   <div class="container">
+    <button class="close-button" onclick="closeForm()">X</button>
     <form action="PHP/inscription.php" method="post" onsubmit="return validatePassword()">
       <h2>Inscription</h2>
       <input type="text" name="username" placeholder="Nom d'utilisateur" required>
@@ -69,17 +81,22 @@
     <p>Déjà un compte ? <a href="login.html">Connectez-vous ici</a></p>
     <p><a href="mdp_oublie.html">Mot de passe oublié ?</a></p>
   </div>
+  
   <script>
     function validatePassword() {
-        var password = document.getElementById("password").value;
-        var confirmPassword = document.getElementById("confirm_password").value;
-        if (password != confirmPassword) {
-            alert("Les mots de passe ne correspondent pas !");
-            return false;
-        }
-        return true;
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirm_password").value;
+      if (password != confirmPassword) {
+        alert("Les mots de passe ne correspondent pas !");
+        return false;
+      }
+      return true;
     }
-    </script>
-    
+  
+    function closeForm() {
+      var container = document.querySelector('.container');
+      container.style.display = 'none';
+    }
+  </script>
 </body>
 </html>

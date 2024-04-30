@@ -4,22 +4,11 @@ body {
    padding: 0; /* Supprime les espacements internes par défaut */
   background-color: #f7f7f7; /* Couleur de fond */
   color: #333; /* Couleur de texte principale */
+  overflow-x: hidden;
 }
 
-.container {
-  width: 80%; /* Largeur du contenu principal */
-  margin: 0 auto; /* Centre le contenu horizontalement */
-  padding: 20px; /* Espacement interne du contenu */
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0; /* Supprime les marges supérieures par défaut pour les titres */
-}
-
-p {
-  margin-bottom: 1.5em; /* Espacement entre les paragraphes */
-}
-
+<<<<<<< HEAD
+=======
 /* Styles pour la barre de navigation */
 .navbar {
   background-color: #333; /* Changement de la couleur de fond */
@@ -36,17 +25,16 @@ p {
   padding: 10px 20px; /* Ajout de rembourrage pour un meilleur espacement */
 }
 
-/* Styles pour le contenu principal */
-main {
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-
+>>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
 .login-button {
   margin-bottom: 50px;
-
-  display: inline-block;
+  display: flex;
+  margin-left: 50px; /* Décalage vers la droite */
+  align-items: center;
+  justify-content: center;
   padding: 5px;
+  width: 50px; /* Définir une largeur fixe pour le bouton */
+  height: 50px; /* Définir une hauteur fixe pour le bouton */
   border: 2px solid #333;
   border-radius: 50%;
   background-color: red;
@@ -56,6 +44,10 @@ main {
   color: #333;
   font-size: 20px;
 }
+
+<<<<<<< HEAD
+=======
+
 
 /* Styles pour le panneau latéral gauche */
 .sidebar {
@@ -93,15 +85,20 @@ main {
 
 
 .sidebar ul li:hover {
-  background-color: gray;
-  /* Couleur de fond au survol */
+  background-color: gray; /* Couleur de fond au survol */
 }
 
-
-
-.sidebar ul li a:hover {
-  color: white;
+.sidebar ul li:hover a {
+  color: white; /* Couleur du texte des liens au survol */
 }
+
+.sidebar ul li a {
+  display: block; /* Assure que les liens remplissent toute la largeur de l'élément li */
+  text-decoration: none; /* Supprime la soulignement par défaut des liens */
+  color: black; /* Couleur du texte par défaut */
+
+}
+
 
 /* Style pour afficher le panneau latéral */
 .sidebar.show {
@@ -126,26 +123,14 @@ main {
   /* Curseur pointer pour indiquer que c'est cliquable */
 }
 
-.search-form,
-.search-form input,
-.search-message {
-  text-align: center;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: red
-}
-
-.social-icons {
-  font-size: 20px;
-}
-
-.social-icons a {
+nav .social-icons a,
+footer .social-icons a {
   margin-right: 10px; /* Espacement de 10 pixels vers la droite */
 }
 
+.sidebar .social-icons a {
+  color: black; /* Couleur noire pour les icônes sociales dans la barre de navigation */
+}
 
 .search-icon {
   cursor: pointer;
@@ -154,31 +139,7 @@ main {
   /* Marge entre les icônes */
 }
 
-/* Style du champ de saisie */
-input[type="text"] {
-  width: 100px;
-  padding: 10px;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  border: 2px solid #ccc;
-  /* Bordure grise */
-  border-radius: 5px;
-  /* Coins arrondis */
-  outline: none;
-  /* Suppression de la bordure bleue lors du focus */
-}
-
-/* Style du texte de placeholder */
-::placeholder {
-  color: #999;
-  /* Couleur grise pour le placeholder */
-}
-
-/* Style lorsqu'il est en focus */
-input[type="text"]:focus {
-  border-color: #66afe9;
-  /* Bordure bleue lors du focus */
-}
+>>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
 
 .sub-menu {
   display: none;
@@ -206,7 +167,7 @@ input[type="text"]:focus {
   color: white;
 }
 
-#ayibopost {
+#addicted {
   color: red;
   /* Couleur du texte */
   font-family: 'Algerian', sans-serif;
@@ -239,3 +200,50 @@ input[type="text"]:focus {
   margin-top: 5px;
   /* Espacement avec le champ de recherche */
 }
+
+<<<<<<< HEAD
+/* Par défaut, le logo occupe 10% de la largeur de l'écran */
+.navbar-brand {
+  width: 10vw;
+  height: auto;
+  padding: 0.5rem;
+}
+
+/* Pour les écrans de taille moyenne, augmentez la taille à 15% */
+@media (min-width: 768px) {
+  .navbar-brand {
+    width: 15vw;
+  }
+}
+
+/* Pour les grands écrans, augmentez encore la taille à 20% */
+@media (min-width: 992px) {
+  .navbar-brand {
+    width: 20vw;
+  }
+}
+
+/* Pour les très grands écrans, augmentez encore la taille à 25% */
+@media (min-width: 1200px) {
+  .navbar-brand {
+    width: 25vw;
+  }
+=======
+
+.navbar-brand {
+  width: 10%;
+  height: auto;
+  padding: 0.5rem; /* Ajoute un peu d'espace autour du cercle */
+>>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+<<<<<<< HEAD
+  border-radius: 50%;
+}
+=======
+  border-radius: 50%; /* Rend l'image circulaire */
+}
+>>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9

@@ -1,0 +1,80 @@
+.sidebar {
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff; /* Couleur de fond du panneau latéral */
+    overflow-x: hidden;
+    transition: width 0.5s;
+    overflow-y: auto;
+}
+
+.sidebar.show {
+    width: 50%; /* Sur les grands écrans, le panneau s'ouvre à moitié */
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar.show {
+        width: 100%; /* Sur les petits écrans, le panneau occupe toute la largeur */
+    }
+}
+
+
+  * Style pour les liens dans le panneau latéral */ .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none; /* Supprime les puces des listes */
+  }
+  
+  .sidebar ul li a {
+    color: black !important;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .sidebar ul li:hover {
+    background-color: gray; /* Couleur de fond au survol */
+  }
+  
+  .sidebar ul li:hover a {
+    color: white; /* Couleur du texte des liens au survol */
+  }
+  
+  .sidebar ul li a {
+    display: block; /* Assure que les liens remplissent toute la largeur de l'élément li */
+    text-decoration: none; /* Supprime la soulignement par défaut des liens */
+    color: black; /* Couleur du texte par défaut */
+  
+  }
+  
+  
+
+  
+/* Style pour l'icône de fermeture dans un cercle */
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Crée un cercle */
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* Curseur pointer pour indiquer que c'est cliquable */
+  }
+  
