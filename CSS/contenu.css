@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
 /* Styles pour le contenu principal */
 main {
     margin-bottom: 50px;
@@ -33,7 +37,11 @@ main {
 
   
   p {
+<<<<<<< HEAD
     text-align: left;
+=======
+    text-align: justify;
+>>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
     margin-bottom: 1.5em; /* Espacement entre les paragraphes */
     text-justify: distribute;
      

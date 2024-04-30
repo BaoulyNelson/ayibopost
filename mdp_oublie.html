@@ -52,11 +52,22 @@
       a:hover {
         text-decoration: underline;
       }
-      
+      .close-button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+      }
   </style>
 </head>
 <body>
   <div class="container">
+    <button class="close-button" onclick="closeForm()">X</button>
     <form action="PHP/reset_password.php" method="post">
       <h2>Mot de passe oublié</h2>
       <p>Entrez votre adresse email pour réinitialiser votre mot de passe.</p>
@@ -65,5 +76,11 @@
     </form>
     <p>Se souvenir du mot de passe ? <a href="login.html">Connectez-vous ici</a></p>
   </div>
+  <script>
+    function closeForm() {
+      var container = document.querySelector('.container');
+      container.style.display = 'none';
+    }
+  </script>
 </body>
 </html>
