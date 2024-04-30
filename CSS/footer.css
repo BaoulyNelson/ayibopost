@@ -1,13 +1,10 @@
-/* Style du footer */
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 5px 0; /* Réduire l'espacement à 5 pixels en haut et en bas */
-    width: 100%; /* Utiliser toute la largeur de la fenêtre */
-    position: absolute; /* Positionner le footer en bas de la fenêtre */
-    bottom: 0; /* Aligner le footer au bas de la fenêtre */
-    left: 0; /* Aligner le footer complètement à gauche */
+.footer {
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+    margin-top: 50px;
 }
+
 
 .scroll-to-top {
     position: fixed;
@@ -35,4 +32,53 @@ footer {
 
 .scroll-to-top.show {
     bottom: 20px; /* Affiche le bouton lorsqu'il est visible dans la fenêtre */
+}
+
+
+
+footer .social-icons a {
+    color: white; /* Couleur blanche pour les icônes sociales dans le pied de page */
+      
+}
+
+
+  footer .social-icons {
+    text-align: center; /* Centre le contenu horizontalement */
+  }
+
+  .social-icons {
+    font-size: 20px;
+  }
+    
+ 
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .contact-info a {
+    color: white; /* Définit la couleur du texte en blanc */
+    text-decoration: none; /* Supprime les soulignements des liens */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Ajoute un soulignement lors du survol */
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    position: fixed; /* Fixe le footer en bas de la fenêtre sur les petits écrans */
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Ajoute un padding en bas du contenu principal pour éviter qu'il ne soit caché par le footer */
+  main {
+    padding-bottom: 60px; /* Ajustez la valeur en fonction de la hauteur de votre footer */
+  }
+  /* Ajoute un padding en bas à la classe .sub-menu sur les petits écrans */
+  .login-button {
+    padding-bottom: 20px; /* Ajustez la valeur selon vos besoins */
+  }
 }

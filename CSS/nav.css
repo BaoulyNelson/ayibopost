@@ -1,0 +1,33 @@
+
+/* Styles pour la barre de navigation */
+.navbar {
+    background-color: #333; /* Changement de la couleur de fond */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre légère */
+    color: white; /* Texte en blanc */
+    position: fixed; /* Fixer la navbar en haut de la page pour une navigation facile */
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px; /* Ajout de rembourrage pour un meilleur espacement */
+  }
+
+  
+nav .social-icons a,
+footer .social-icons a {
+  margin-right: 10px; /* Espacement de 10 pixels vers la droite */
+}
+
+.sidebar .social-icons a {
+  color: black; /* Couleur noire pour les icônes sociales dans la barre de navigation */
+}
+
+.search-icon {
+  cursor: pointer;
+  /* Changement du curseur en curseur pointeur */
+  margin-right: 10px;
+  /* Marge entre les icônes */
+}
