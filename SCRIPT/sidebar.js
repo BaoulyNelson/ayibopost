@@ -33,8 +33,4 @@ searchButton.addEventListener('click', (event) => {
     console.log('Le bouton de recherche a été cliqué.'); // Affiche un message dans la console du navigateur pour déboguer
 
     // Ajoutez ici le code pour traiter la recherche et afficher le contenu associé au lien
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9

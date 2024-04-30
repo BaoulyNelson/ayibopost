@@ -1,249 +1,123 @@
 body {
-  font-family: Arial, sans-serif; /* Police de caractères par défaut */
-  line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
-   padding: 0; /* Supprime les espacements internes par défaut */
-  background-color: #f7f7f7; /* Couleur de fond */
-  color: #333; /* Couleur de texte principale */
-  overflow-x: hidden;
-}
-
-<<<<<<< HEAD
-=======
-/* Styles pour la barre de navigation */
-.navbar {
-  background-color: #333; /* Changement de la couleur de fond */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre légère */
-  color: white; /* Texte en blanc */
-  position: fixed; /* Fixer la navbar en haut de la page pour une navigation facile */
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 10px 20px; /* Ajout de rembourrage pour un meilleur espacement */
-}
-
->>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
-.login-button {
-  margin-bottom: 50px;
-  display: flex;
-  margin-left: 50px; /* Décalage vers la droite */
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  width: 50px; /* Définir une largeur fixe pour le bouton */
-  height: 50px; /* Définir une hauteur fixe pour le bouton */
-  border: 2px solid #333;
-  border-radius: 50%;
-  background-color: red;
-}
-
-.login-button .fas.fa-user {
-  color: #333;
-  font-size: 20px;
-}
-
-<<<<<<< HEAD
-=======
-
-
-/* Styles pour le panneau latéral gauche */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background-color: #f4f4f4;
-  transition: left 0.3s ease;
-  overflow-y: auto;
-
-}
-
-* Style pour les liens dans le panneau latéral */ .sidebar ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar ul {
-  list-style: none; /* Supprime les puces des listes */
-}
-
-.sidebar ul li a {
-  color: black !important;
-  text-decoration: none;
-}
-
-.sidebar ul li {
-  padding: 10px;
-  border-bottom: 1px solid #333;
-  transition: background-color 0.3s ease;
-}
-
-
-.sidebar ul li:hover {
-  background-color: gray; /* Couleur de fond au survol */
-}
-
-.sidebar ul li:hover a {
-  color: white; /* Couleur du texte des liens au survol */
-}
-
-.sidebar ul li a {
-  display: block; /* Assure que les liens remplissent toute la largeur de l'élément li */
-  text-decoration: none; /* Supprime la soulignement par défaut des liens */
-  color: black; /* Couleur du texte par défaut */
-
-}
-
-
-/* Style pour afficher le panneau latéral */
-.sidebar.show {
-  left: 0;
-  /* Affiche le panneau latéral en position gauche */
-}
-
-/* Style pour l'icône de fermeture dans un cercle */
-.close-icon {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  /* Crée un cercle */
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  /* Curseur pointer pour indiquer que c'est cliquable */
-}
-
-nav .social-icons a,
-footer .social-icons a {
-  margin-right: 10px; /* Espacement de 10 pixels vers la droite */
-}
-
-.sidebar .social-icons a {
-  color: black; /* Couleur noire pour les icônes sociales dans la barre de navigation */
-}
-
-.search-icon {
-  cursor: pointer;
-  /* Changement du curseur en curseur pointeur */
-  margin-right: 10px;
-  /* Marge entre les icônes */
-}
-
->>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
-
-.sub-menu {
-  display: none;
-}
-
-.toggle-icon {
-  margin-right: 5px;
-}
-
-.menu-icon {
-  margin-right: 30px;
-  /* Ajustez cette valeur selon vos besoins */
-  width: 40px;
-  /* Largeur du cercle */
-  height: 40px;
-  /* Hauteur du cercle */
-  border-radius: 50%;
-  /* Pour créer un cercle */
-  background-color: red;
-  /* Couleur de fond du cercle */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  color: white;
-}
-
-#addicted {
-  color: red;
-  /* Couleur du texte */
-  font-family: 'Algerian', sans-serif;
-  /* Police de caractères de Google Fonts */
-}
-
-.menu-icon i {
-  color: white;
-  /* Couleur de l'icône */
-  font-size: 24px;
-  /* Taille de l'icône */
-
-}
-
-
-
-.close-icon i {
-  color: white;
-  /* Couleur de l'icône */
-  font-size: 20px;
-  /* Taille de l'icône */
-}
-
-/* Style pour le message de recherche */
-.search-message {
-  color: red;
-  /* Couleur grise pour le message */
-  font-size: 14px;
-  /* Taille de police */
-  margin-top: 5px;
-  /* Espacement avec le champ de recherche */
-}
-
-<<<<<<< HEAD
-/* Par défaut, le logo occupe 10% de la largeur de l'écran */
-.navbar-brand {
-  width: 10vw;
-  height: auto;
-  padding: 0.5rem;
-}
-
-/* Pour les écrans de taille moyenne, augmentez la taille à 15% */
-@media (min-width: 768px) {
-  .navbar-brand {
-    width: 15vw;
+    font-family: Arial, sans-serif; /* Police de caractères par défaut */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+     padding: 0; /* Supprime les espacements internes par défaut */
+    background-color: #f7f7f7; /* Couleur de fond */
+    color: #333; /* Couleur de texte principale */
+    overflow-x: hidden;
   }
-}
-
-/* Pour les grands écrans, augmentez encore la taille à 20% */
-@media (min-width: 992px) {
-  .navbar-brand {
-    width: 20vw;
+  
+  .login-button {
+    margin-bottom: 50px;
+    display: flex;
+    margin-left: 50px; /* Décalage vers la droite */
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 50px; /* Définir une largeur fixe pour le bouton */
+    height: 50px; /* Définir une hauteur fixe pour le bouton */
+    border: 2px solid #333;
+    border-radius: 50%;
+    background-color: red;
   }
-}
-
-/* Pour les très grands écrans, augmentez encore la taille à 25% */
-@media (min-width: 1200px) {
-  .navbar-brand {
-    width: 25vw;
+  
+  .login-button .fas.fa-user {
+    color: #333;
+    font-size: 20px;
   }
-=======
-
-.navbar-brand {
-  width: 10%;
-  height: auto;
-  padding: 0.5rem; /* Ajoute un peu d'espace autour du cercle */
->>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
-}
-
-.navbar-brand img {
-  max-width: 100%;
-  height: auto;
-<<<<<<< HEAD
-  border-radius: 50%;
-}
-=======
-  border-radius: 50%; /* Rend l'image circulaire */
-}
->>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
+  
+  
+  .sub-menu {
+    display: none;
+  }
+  
+  .toggle-icon {
+    margin-right: 5px;
+  }
+  
+  .menu-icon {
+    margin-right: 30px;
+    /* Ajustez cette valeur selon vos besoins */
+    width: 40px;
+    /* Largeur du cercle */
+    height: 40px;
+    /* Hauteur du cercle */
+    border-radius: 50%;
+    /* Pour créer un cercle */
+    background-color: red;
+    /* Couleur de fond du cercle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+  }
+  
+  #addicted {
+    color: red;
+    /* Couleur du texte */
+    font-family: 'Algerian', sans-serif;
+    /* Police de caractères de Google Fonts */
+  }
+  
+  .menu-icon i {
+    color: white;
+    /* Couleur de l'icône */
+    font-size: 24px;
+    /* Taille de l'icône */
+  
+  }
+  
+  
+  
+  .close-icon i {
+    color: white;
+    /* Couleur de l'icône */
+    font-size: 20px;
+    /* Taille de l'icône */
+  }
+  
+  /* Style pour le message de recherche */
+  .search-message {
+    color: red;
+    /* Couleur grise pour le message */
+    font-size: 14px;
+    /* Taille de police */
+    margin-top: 5px;
+    /* Espacement avec le champ de recherche */
+  }
+  
+  /* Par défaut, le logo occupe 10% de la largeur de l'écran */
+  .navbar-brand {
+    width: 10vw;
+    height: auto;
+    padding: 0.5rem;
+  }
+  
+  /* Pour les écrans de taille moyenne, augmentez la taille à 15% */
+  @media (min-width: 768px) {
+    .navbar-brand {
+      width: 15vw;
+    }
+  }
+  
+  /* Pour les grands écrans, augmentez encore la taille à 20% */
+  @media (min-width: 992px) {
+    .navbar-brand {
+      width: 20vw;
+    }
+  }
+  
+  /* Pour les très grands écrans, augmentez encore la taille à 25% */
+  @media (min-width: 1200px) {
+    .navbar-brand {
+      width: 25vw;
+    }
+  }
+  
+  .navbar-brand img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  

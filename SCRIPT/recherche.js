@@ -8,7 +8,6 @@ const closeIcon = document.querySelector('.close-icon'); // Sélection de l'icô
 const links = document.querySelectorAll('.sidebar ul li'); // Sélection des liens dans le sidebar
 const message = document.getElementById('message'); // Sélection de l'élément pour afficher le message
 
-<<<<<<< HEAD
 // Fonction pour ouvrir le sidebar
 function openSidebar() {
     sidebar.classList.add('show');
@@ -19,8 +18,6 @@ function closeSidebar() {
     sidebar.classList.remove('show');
 }
 
-=======
->>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
 // Ajout d'un écouteur d'événements au clic sur l'icône de recherche
 searchIcon.addEventListener('click', () => {
     // Inversion de la visibilité du formulaire
@@ -34,18 +31,12 @@ searchIcon.addEventListener('click', () => {
 
 // Ajout d'un écouteur d'événements au clic sur l'icône de menu hamburger
 menuIcon.addEventListener('click', () => {
-<<<<<<< HEAD
     // Ouvre le sidebar
     openSidebar();
-=======
-    // Ajout de la classe 'show' pour afficher le sidebar
-    sidebar.classList.add('show');
->>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
 });
 
 // Ajout d'un écouteur d'événements au clic sur l'icône de fermeture du sidebar
 closeIcon.addEventListener('click', () => {
-<<<<<<< HEAD
     // Ferme le sidebar
     closeSidebar();
 });
@@ -56,10 +47,6 @@ links.forEach(link => {
         // Ferme le sidebar lorsqu'un lien est cliqué
         closeSidebar();
     });
-=======
-    // Suppression de la classe 'show' pour masquer le sidebar
-    sidebar.classList.remove('show');
->>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
 });
 
 // Ajout d'un écouteur d'événements pour le champ de recherche pour filtrer les liens en temps réel
@@ -82,8 +69,4 @@ searchInput.addEventListener('input', () => {
     } else {
         message.innerText = ''; // Efface le message s'il n'y a pas de saisie dans le champ de recherche
     }
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 8fd0a408ca20ba641a4401343db56a1b126f77b9
