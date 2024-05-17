@@ -5,6 +5,15 @@
     margin-top: 50px;
 }
 
+@media (max-width: 768px) {
+  .footer {
+      transition: transform 0.3s ease;
+  }
+
+  .footer.hidden {
+      transform: translateY(100%);
+  }
+}
 
 .scroll-to-top {
     position: fixed;

@@ -8,11 +8,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Fonction pour afficher ou masquer le formulaire de recherche
     searchIcon.addEventListener('click', function() {
+        // Afficher le panneau lorsque l'icône de recherche est cliquée
+        document.querySelector('.sidebar').classList.add('show');
+
         if (searchForm.style.display === 'block') {
             searchForm.style.display = 'none';
         } else {
             searchForm.style.display = 'block';
-            mySearch.focus(); // Activer le focus sur la zone de recherche
+            mySearch.focus(); // Activer le focus sur le champ de saisie
         }
     });
 

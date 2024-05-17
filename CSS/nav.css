@@ -14,7 +14,12 @@
     margin: 0;
     padding: 10px 20px; /* Ajout de rembourrage pour un meilleur espacement */
   }
-
+  
+  .line {
+    height: 4px; /* Increased height for thicker line */
+    background-color: #FF6F6F;
+    margin-top: 10px;
+}
   
 nav .social-icons a,
 footer .social-icons a {
@@ -25,9 +30,5 @@ footer .social-icons a {
   color: black; /* Couleur noire pour les icônes sociales dans la barre de navigation */
 }
 
-.search-icon {
-  cursor: pointer;
-  /* Changement du curseur en curseur pointeur */
-  margin-right: 10px;
-  /* Marge entre les icônes */
-}
+
+

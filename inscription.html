@@ -71,32 +71,33 @@
   <div class="container">
     <button class="close-button" onclick="closeForm()">X</button>
     <form action="PHP/inscription.php" method="post" onsubmit="return validatePassword()">
-      <h2>Inscription</h2>
-      <input type="text" name="username" placeholder="Nom d'utilisateur" required>
-      <input type="email" name="email" placeholder="Adresse email" required>
-      <input type="password" name="password" id="password" placeholder="Mot de passe" required>
-      <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirmez le mot de passe" required>
-      <button type="submit">S'inscrire</button>
+        <h2>Inscription</h2>
+        <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+        <input type="email" name="email" placeholder="Adresse email" required>
+        <input type="password" name="password" id="password" placeholder="Mot de passe" required>
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirmez le mot de passe" required>
+        <button type="submit" name="inscription">S'inscrire</button>
     </form>
     <p>Déjà un compte ? <a href="login.html">Connectez-vous ici</a></p>
     <p><a href="mdp_oublie.html">Mot de passe oublié ?</a></p>
-  </div>
-  
-  <script>
+</div>
+
+<script>
     function validatePassword() {
-      var password = document.getElementById("password").value;
-      var confirmPassword = document.getElementById("confirm_password").value;
-      if (password != confirmPassword) {
-        alert("Les mots de passe ne correspondent pas !");
-        return false;
-      }
-      return true;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirm_password").value;
+        if (password != confirmPassword) {
+            alert("Les mots de passe ne correspondent pas !");
+            return false;
+        }
+        return true;
     }
-  
+
     function closeForm() {
-      var container = document.querySelector('.container');
-      container.style.display = 'none';
+        var container = document.querySelector('.container');
+        container.style.display = 'none';
     }
-  </script>
+</script>
+
 </body>
 </html>

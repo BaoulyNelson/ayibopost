@@ -1,25 +1,31 @@
-// Fonction pour calculer la hauteur du footer
-function getFooterHeight() {
-    const footer = document.querySelector('footer');
-    return footer ? footer.offsetHeight : 0;
-}
+document.addEventListener('DOMContentLoaded', (event) => {
+    let lastScrollTop = 0;
+    const footer = document.querySelector('.footer');
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    
+    function handleScroll() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-
-
-// Fonction pour charger plus de contenu
-function loadMoreContent() {
-    // Simule le chargement de contenu supplémentaire
-    const newContent = document.createElement('div');
-    newContent.className = 'post';
-    newContent.innerHTML = '<h2>Autre Contenu</h2><p>Voici le nouveau contenu chargé...</p>';
-    document.getElementById('contenu_opinions').appendChild(newContent);
-}
-
-// Ajout d'un événement de défilement de la fenêtre
-window.addEventListener('scroll', () => {
-    // Vérifie si l'utilisateur a fait défiler jusqu'au bas de la page
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        // Chargez plus de contenu
-        loadMoreContent();
+        if (scrollTop > lastScrollTop) {
+            // Scroll vers le bas
+            footer.classList.add('hidden');
+        } else {
+            // Scroll vers le haut
+            footer.classList.remove('hidden');
+        }
+        
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Pour éviter des valeurs négatives
     }
+
+    function checkMediaQuery() {
+        if (mediaQuery.matches) {
+            window.addEventListener('scroll', handleScroll);
+        } else {
+            window.removeEventListener('scroll', handleScroll);
+            footer.classList.remove('hidden'); // S'assurer que le footer est visible sur les grands écrans
+        }
+    }
+
+    mediaQuery.addListener(checkMediaQuery);
+    checkMediaQuery(); // Initial check
 });

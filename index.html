@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Inclure Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>Addicted Press</title>
 </head>
 
@@ -27,8 +29,8 @@
         <div class="search-icon" id="searchIcon">
             <i class="fas fa-search"></i> <!-- Icône de recherche -->
         </div>
-        
-        
+
+
         <div class="menu-icon">
             <i class="fas fa-bars"></i> <!-- Icône de menu hamburger -->
         </div>
@@ -40,25 +42,30 @@
         <div class="close-icon">
             <i class="fas fa-times"></i> <!-- Icône de fermeture -->
         </div>
-        <p id="addicted">Addicted Press</p>
-       
-        
+        <div class="logo" id="addicted">Addicted Press</div>
+
+
+
         <div class="social-icons">
             <a href="lien_vers_votre_page_facebook" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="lien_vers_votre_page_twitter" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="lien_vers_votre_page_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="lien_vers_votre_chaine_youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="mailto:votreadresseemail@example.com"><i class="fas fa-envelope"></i></a>
+            
             <!-- Ajoutez d'autres icônes de médias sociaux au besoin -->
         </div>
-         <!-- Formulaire de recherche (initialement caché) -->
-         <form id="searchForm" style="display: none;">
+        <!-- Formulaire de recherche (initialement caché) -->
+        <form id="searchForm" style="display: none;">
             <div>
                 <input type="search" id="mySearch" name="q" placeholder="Rechercher..." />
-                <!-- <button>Search</button> -->
+                <button type="submit">Rechercher</button>
             </div>
             <i id="message"></i>
         </form>
-        <hr>
+       
+        <div class="line"></div>
 
         <ul>
             <li><a href="#" class="lien" class="nav-item active" data-contenu="accueil">Accueil</a></li>
@@ -78,14 +85,22 @@
                     <!-- Ajoutez d'autres langues selon vos besoins -->
                 </ul>
             </li>
-            
+
         </ul>
         <!-- icone "Log In" -->
         <hr>
         <a href="inscription.html" class="login-button">
             <i class="fas fa-user"></i>
         </a>
+        <div class="navbar_content">
+            <i class="bi bi-grid"></i>
+            <i class='bx bx-sun' id="darkLight"></i>
+            <i class='bx bx-bell' ></i>
+
+        </div>
+        <div class="line"></div>
     </div>
+
 
     <main>
         <div id="contenu_accueil" class="contenu" style="display: block;">
@@ -104,7 +119,8 @@
 
         <div id="contenu_societe" class="contenu" style="display: none;">
             <h2>Contenu de la page sur la société</h2>
-            <p class="justify">La bourse mondiale a connu une hausse significative suite à l'annonce de nouvelles politiques fiscales.
+            <p class="justify">La bourse mondiale a connu une hausse significative suite à l'annonce de nouvelles
+                politiques fiscales.
             </p>
             <p>Les experts prédisent une croissance économique soutenue pour l'année prochaine malgré les défis
                 économiques actuels.</p>
@@ -119,25 +135,33 @@
         </div>
         <div id="contenu_politique" class="contenu" style="display: none;">
             <h2>Contenu de la page sur la politique</h2>
-            <p class="justify">Le contenu de la page sur la politique explore les différents aspects des politiques gouvernementales, des systèmes politiques, et des enjeux sociaux et économiques liés à la gouvernance.</p>
+            <p class="justify">Le contenu de la page sur la politique explore les différents aspects des politiques
+                gouvernementales, des systèmes politiques, et des enjeux sociaux et économiques liés à la gouvernance.
+            </p>
         </div>
-        
+
         <div id="contenu_opinions" class="contenu" style="display: none;">
             <h2>Contenu de la page sur les opinions</h2>
-            <p class="justify">La page sur les opinions offre une plateforme pour exprimer une variété de points de vue sur des sujets variés, allant de la politique à la culture en passant par les questions sociales et environnementales.</p>
-       
+            <p class="justify">La page sur les opinions offre une plateforme pour exprimer une variété de points de vue
+                sur des sujets variés, allant de la politique à la culture en passant par les questions sociales et
+                environnementales.</p>
+
         </div>
-        
+
         <article id="contenu_explorations" class="contenu" style="display: none;">
             <h2>Contenu de la page sur les explorations</h2>
-            <p class="justify">La page sur les explorations propose un voyage à travers diverses découvertes et aventures, qu'elles soient géographiques, scientifiques, historiques ou culturelles, invitant les lecteurs à explorer de nouveaux horizons et à élargir leurs connaissances.</p>
+            <p class="justify">La page sur les explorations propose un voyage à travers diverses découvertes et
+                aventures, qu'elles soient géographiques, scientifiques, historiques ou culturelles, invitant les
+                lecteurs à explorer de nouveaux horizons et à élargir leurs connaissances.</p>
         </article>
-        
+
         <div id="contenu_podcast" class="contenu" style="display: none;">
             <h2>Contenu de la page sur le podcast</h2>
-            <p class="justify">La page sur le podcast présente des discussions, des interviews, des analyses et des réflexions sur des sujets d'actualité, des tendances culturelles, des événements mondiaux et bien plus encore, offrant une expérience audio immersive pour les auditeurs.</p>
+            <p class="justify">La page sur le podcast présente des discussions, des interviews, des analyses et des
+                réflexions sur des sujets d'actualité, des tendances culturelles, des événements mondiaux et bien plus
+                encore, offrant une expérience audio immersive pour les auditeurs.</p>
         </div>
-        
+
         <div id="contenu_sport" class="contenu" style="display: none;">
             <h2>Contenu de la page sur le sport</h2>
             <p>L'équipe nationale remporte la médaille d'or lors des championnats mondiaux, suscitant la fierté et
@@ -167,8 +191,8 @@
             <a href="lien_vers_votre_page_twitter" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="lien_vers_votre_page_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="lien_vers_votre_chaine_youtube" target="_blank"><i class="fab fa-youtube"></i></a>
-            <!-- Ajoutez d'autres icônes de médias sociaux au besoin -->
-        </div>
+            <a href="#tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
         <div class="scroll-to-top">
             <i class="fas fa-chevron-up"></i>
         </div>
@@ -177,17 +201,17 @@
     <!-- <script src="SCRIPT/sidebar.js"></script> -->
     <script src="SCRIPT/recherche.js"></script>
     <script src="SCRIPT/contenu.js"></script>
-    <script src="SCRIPT/scroler.js"></script> 
+    <script src="SCRIPT/scroler.js"></script>
     <script src="SCRIPT/toggle.js"></script>
     <script src="SCRIPT/soumenu.js"></script>
-    <!-- <script src="SCRIPT/script.js"></script> -->
-     <!-- Inclure votre fichier de script JavaScript -->
-  
+    <script src="SCRIPT/script.js"></script>
+    <!-- Inclure votre fichier de script JavaScript -->
+
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     
+
 </body>
 
 </html>
