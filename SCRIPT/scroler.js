@@ -1,3 +1,25 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+    window.addEventListener('scroll', function() {
+        // Afficher le bouton lorsque l'utilisateur a fait défiler jusqu'à un certain niveau
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add('active');
+        } else {
+            scrollToTopBtn.classList.remove('active');
+        }
+    });
+
+    scrollToTopBtn.addEventListener('click', function() {
+        // Smooth scrolling vers le haut de la page
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
+
 document.addEventListener('DOMContentLoaded', (event) => {
     let lastScrollTop = 0;
     const footer = document.querySelector('.footer');

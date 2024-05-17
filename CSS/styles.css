@@ -44,10 +44,12 @@ body.dark {
   column-gap: 25px;
 }
 
+
 .navbar_content i {
   cursor: pointer;
   font-size: 20px;
-  color: var(--grey-color);
+  color: #000; /* Couleur noire foncée */
+
 }
 
 .login-button {

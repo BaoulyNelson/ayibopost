@@ -49,7 +49,7 @@
 }
 
  /* Style pour le message de recherche */
- .search-message {
+ #message {
     color: red;
     /* Couleur grise pour le message */
     font-size: 14px;
