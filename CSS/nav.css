@@ -21,14 +21,32 @@
     margin-top: 10px;
 }
   
+/* Espacement uniforme pour les icônes dans nav et footer */
 nav .social-icons a,
 footer .social-icons a {
   margin-right: 10px; /* Espacement de 10 pixels vers la droite */
 }
 
+/* Styles spécifiques pour les icônes dans la barre latérale */
 .sidebar .social-icons a {
   color: black; /* Couleur noire pour les icônes sociales dans la barre de navigation */
+  margin-right: 10px; /* Ajoute un espacement droit de 10px entre chaque icône */
 }
+
+.sidebar .social-icons a:last-child {
+  margin-right: 0; /* Supprime l'espacement droit pour la dernière icône pour éviter un espace vide à la fin */
+}
+
+/* Styles spécifiques pour les icônes dans le footer */
+footer .social-icons a {
+  color: white; /* Couleur blanche pour les icônes sociales dans le footer */
+}
+
+/* Espacement global pour .social-icons */
+.social-icons {
+  margin-left: 10px;
+}
+
 
 
 

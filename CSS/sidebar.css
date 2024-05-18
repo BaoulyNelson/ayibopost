@@ -22,48 +22,46 @@
     }
 }
 
+/* Style pour les liens dans le panneau latéral */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Supprime les puces des listes */
+}
 
-  /* * Style pour les liens dans le panneau latéral */  */
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
+.sidebar ul li {
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  padding-left: 20px; /* Ajoute du padding à gauche */
+}
+
+.sidebar ul li:hover {
+  background-color: gray; /* Couleur de fond au survol */
+}
+
+.sidebar ul li:hover a {
+  color: white; /* Couleur du texte des liens au survol */
+}
+
+.sidebar ul li a {
+  color: black !important;
+  display: block; /* Assure que les liens remplissent toute la largeur de l'élément li */
+  text-decoration: none; /* Supprime la soulignement par défaut des liens */
+  padding-left: 10px; /* Ajoute du padding à gauche des liens */
+}
+
   
-  .sidebar ul {
-    list-style: none; /* Supprime les puces des listes */
-  }
-  
-  .sidebar ul li a {
-    color: black !important;
-    text-decoration: none;
-  }
-  
-  .sidebar ul li {
-    padding: 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  
-  .sidebar ul li:hover {
-    background-color: gray; /* Couleur de fond au survol */
-  }
-  
-  .sidebar ul li:hover a {
-    color: white; /* Couleur du texte des liens au survol */
-  }
-  
-  .sidebar ul li a {
-    display: block; /* Assure que les liens remplissent toute la largeur de l'élément li */
-    text-decoration: none; /* Supprime la soulignement par défaut des liens */
-    color: black; /* Couleur du texte par défaut */
-  
-  }
-  
-  .sidebar .logo {
+  #addicted {
     font-family: 'Old English Text MT', serif;
     font-size: 36px;
   }
+
+  #addicted {
+    color: red;
+    margin-left: 10px;
+  }
+  
 
   
 /* Style pour l'icône de fermeture dans un cercle */

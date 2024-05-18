@@ -55,7 +55,7 @@ body.dark {
 .login-button {
   margin-bottom: 50px;
   display: flex;
-  margin-left: 50px;
+  margin-left: 30px;
   /* Décalage vers la droite */
   align-items: center;
   justify-content: center;
@@ -99,17 +99,6 @@ body.dark {
   align-items: center;
   cursor: pointer;
   color: white;
-}
-
-#addicted {
-  color: red;
-  margin-left: 10px;
-}
-
-.social-icons {
-  margin-left: 10px;
-  margin-top: 20px;
-
 }
 
 .menu-icon i {
