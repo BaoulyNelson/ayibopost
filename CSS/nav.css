@@ -37,29 +37,29 @@ header {
   color: white;
 }
 
-/* Styles pour l'icône utilisateur */
-#user-icon {
-  font-size: 24px;
-  cursor: pointer;
-  color: white;
-  margin-right: 20px; /* Ajustez cette valeur selon le décalage souhaité */
-  text-decoration: none; /* Retire le soulignement */
-  display: flex;
-  align-items: center; /* Aligne verticalement si nécessaire */
-}
 
-
-
-/* Effet de survol */
-.user-icon:hover {
-  color: white; /* Changez la couleur au survol */
-}
-
-/* Retire le soulignement par défaut pour les liens */
-.user-icon a {
+.user-icon {
   text-decoration: none;
-  color: inherit; /* Hérite de la couleur définie pour .user-icon */
 }
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.profile-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-icon i {
+  color: white;
+  
+}
+
 
 .line {
   height: 4px; /* Increased height for thicker line */
@@ -68,9 +68,13 @@ header {
 }
   
 /* Espacement uniforme pour les icônes dans nav et footer */
-nav .social-icons a,
+.sidebar .social-icons a,
 footer .social-icons a {
   margin-right: 10px; /* Espacement de 10 pixels vers la droite */
+}
+
+.sidebar .social-icons{
+  margin-top: 30px;
 }
 
 /* Styles spécifiques pour les icônes dans la barre latérale */

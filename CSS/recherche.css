@@ -37,6 +37,7 @@
     align-items: center;
     gap: 5px;
 }
+
 #mySearch {
     flex: 1;
     padding: 8px;
@@ -44,6 +45,7 @@
     border-radius: 5px;
     font-size: 14px;
 }
+
 #searchForm button {
     padding: 8px 12px;
     border: none;
@@ -54,8 +56,35 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 #searchForm button:hover {
     background-color: #0056b3;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 600px) {
+    #searchForm {
+        max-width: 100%;
+        padding: 8px;
+    }
+    
+    #searchForm div {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #mySearch {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    #searchForm button {
+        width: auto; /* Ensure the button does not stretch to 100% width */
+        padding: 10px;
+        font-size: 16px;
+        align-self: flex-end; /* Align button to the end of the container */
+    }
 }
 
  /* Style pour le message de recherche */

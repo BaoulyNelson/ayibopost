@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="CSS/contenu.css">
     <link rel="stylesheet" href="CSS/sidebar.css">
     <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/stylesDate.css">
     <link rel="stylesheet" href="CSS/articles.css">
     <link rel="stylesheet" href="CSS/recherche.css">
     <link rel="stylesheet" href="CSS/jumbotron.css">
@@ -20,11 +21,14 @@
       <!-- Boxicons CSS -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <title>Addicted Press</title>
+   
 </head>
 
 <body>
     <!-- Barre de navigation -->
     <header>
+        <!-- Horloge actuelle (peut être déplacée en CSS si nécessaire) -->
+        <p id="current-time"><i class="fa fa-clock-o"></i></p>
         <div class="top-bar">
             <a href="#" class="language">FRANÇAIS</a>&nbsp;|&nbsp;
             <a href="#" class="language">ENGLISH</a>
@@ -37,7 +41,12 @@
             
             <h1 class="logo">Addicted Press</h1>
             <a href="inscription.html" class="user-icon">
-                <div id="user-icon">&#128100;</div>
+                <div class="profile-container">
+                    <div class="profile-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                   
+                </div>
             </a>
         </div>
     </header>
@@ -49,7 +58,6 @@
         </div>
         
         <div class="social-icons">
-            
             <a href="lien_vers_votre_page_facebook" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="lien_vers_votre_page_twitter" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="lien_vers_votre_page_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -79,17 +87,6 @@
             <li><a href="#" class="lien" data-contenu="explorations">Explorations</a></li>
             <li><a href="#" class="lien" data-contenu="podcast">Podcast</a></li>
             <li><a href="#" class="lien" data-contenu="sport">Sports</a></li>
-            <li class="parent">
-                <span class="toggle-icon">▼</span>
-                <a href="#"> Langues</a>
-                <ul class="sub-menu" style="display: none;">
-                    <li><a href="#" class="lien" data-contenu="langue">Français</a></li>
-                    <li><a href="#" class="lien" data-contenu="langue">Anglais</a></li>
-                    <li><a href="#" class="lien" data-contenu="langue">Espagnol</a></li>
-                    <!-- Ajoutez d'autres langues selon vos besoins -->
-                </ul>
-            </li>
-
         </ul>
         <!-- icone "Log In" -->
         <hr>
@@ -106,17 +103,16 @@
 
     <main>
         <div id="contenu_accueil" class="contenu" style="display: block;">
-           <!-- Content -->
-<div class="container">
-    <div class="jumbotron">
-        <h1 class="display-4">Bienvenue sur Addicted Press</h1><br>
-        <p class="lead">Le Média des vraies Infos Utiles <br>
-            Restez informé avec nos dernières actualités.</p>
-        <hr class="my-4">
-        <p>Explorez nos articles sur des sujets variés.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Lire les dernières actualités</a>
-    </div>
-</div>
+            <div class="container">
+                <div class="jumbotron">
+                    <h1 class="display-4 text-left text-lg-center">Bienvenue sur Addicted Press</h1><br>
+                    <p class="lead text-left text-lg-center">Le Média des vraies Infos Utiles <br>
+                        Restez informé avec nos dernières actualités.</p>
+                    <hr class="my-4">
+                    <p class="text-left text-lg-center">Explorez nos articles sur des sujets variés.</p>
+                    <a class="btn btn-primary btn-lg d-block d-lg-inline-block mx-auto" href="#" role="button">Lire les dernières actualités</a>
+                </div>
+            </div>
 
         </div>
 
@@ -193,10 +189,7 @@
 
         </div>
 
-        <div id="contenu_langue" class="contenu" style="display: none;">
-            <h2>En quelle langue veu-tu traduire le site?</h2>
-            <p class="justify"> Langues</p>
-        </div>
+       
     </main>
     <footer class="footer bg-dark text-light text-center py-3">
         <div class="contact-info">
@@ -222,11 +215,12 @@
     <script src="SCRIPT/dateFooter.js"></script>
     <!-- <script src="SCRIPT/sidebar.js"></script> -->
     <script src="SCRIPT/recherche.js"></script>
-    <script src="SCRIPT/contenu.js"></script>
+    <!-- <script src="SCRIPT/contenu.js"></script> -->
     <script src="SCRIPT/scroler.js"></script>
     <script src="SCRIPT/toggle.js"></script>
-    <script src="SCRIPT/soumenu.js"></script>
+  
     <script src="SCRIPT/script.js"></script>
+    <script src="SCRIPT/scriptDate.js"></script>
     <!-- Inclure votre fichier de script JavaScript -->
 
     <!-- JavaScript -->
