@@ -1,15 +1,25 @@
 .search-icon {
-    display: inline-block;
-    color: white; /* Changement de couleur au survol */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 20px; /* Ajoute du padding à gauche des liens */
+    background-color: #007bff; /* Couleur de fond de l'icône */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de relief */
     cursor: pointer;
-    font-size: 20px; /* Taille de l'icône */
-    transition: color 0.3s ease; /* Transition pour le changement de couleur au survol */
-    margin-right: 10px;
-    /* Marge entre les icônes */
-  }
-  
+    transition: background-color 0.3s, transform 0.3s;
+}
 
+.search-icon i {
+    color: #fff; /* Couleur de l'icône */
+}
 
+.search-icon:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+    transform: scale(1.1); /* Effet de zoom au survol */
+}
 #searchForm {
     display: none;
     max-width: 400px;

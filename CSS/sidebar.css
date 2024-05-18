@@ -52,18 +52,6 @@
 }
 
   
-  #addicted {
-    font-family: 'Old English Text MT', serif;
-    font-size: 36px;
-  }
-
-  #addicted {
-    color: red;
-    margin-left: 10px;
-  }
-  
-
-  
 /* Style pour l'icône de fermeture dans un cercle */
 .close-icon {
     position: absolute;

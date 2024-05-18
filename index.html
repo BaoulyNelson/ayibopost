@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/articles.css">
     <link rel="stylesheet" href="CSS/recherche.css">
+    <link rel="stylesheet" href="CSS/jumbotron.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Inclure Font Awesome -->
@@ -23,39 +24,43 @@
 
 <body>
     <!-- Barre de navigation -->
-    <nav class="navbar">
-        <a class="navbar-brand rounded-circle" href="#">
-            <img src="IMAGES/logo.jpg" alt="logo">
-        </a>
-        <div class="search-icon" id="searchIcon">
-            <i class="fas fa-search"></i> <!-- Icône de recherche -->
+    <header>
+        <div class="top-bar">
+            <a href="#" class="language">FRANÇAIS</a>&nbsp;|&nbsp;
+            <a href="#" class="language">ENGLISH</a>
         </div>
-
-
-        <div class="menu-icon">
-            <i class="fas fa-bars"></i> <!-- Icône de menu hamburger -->
+        
+        <div class="header-main">
+            <div class="menu-icon" aria-label="Menu">
+                <i class="fas fa-bars"></i> <!-- Icône de menu hamburger -->
+            </div>
+            
+            <h1 class="logo">Addicted Press</h1>
+            <a href="inscription.html" class="user-icon">
+                <div id="user-icon">&#128100;</div>
+            </a>
         </div>
-    </nav>
-
+    </header>
 
     <!-- Panneau latéral gauche -->
     <div id="sidebar" class="sidebar">
         <div class="close-icon">
             <i class="fas fa-times"></i> <!-- Icône de fermeture -->
         </div>
-        <div class="logo" id="addicted">Addicted Press</div>
-
-
-
+        
         <div class="social-icons">
+            
             <a href="lien_vers_votre_page_facebook" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="lien_vers_votre_page_twitter" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="lien_vers_votre_page_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="lien_vers_votre_chaine_youtube" target="_blank"><i class="fab fa-youtube"></i></a>
             <a href="#tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
             <a href="mailto:votreadresseemail@example.com"><i class="fas fa-envelope"></i></a>
-            
             <!-- Ajoutez d'autres icônes de médias sociaux au besoin -->
+        </div>
+<hr>
+        <div class="search-icon" id="searchIcon">
+            <i class="fas fa-search"></i> <!-- Icône de recherche -->
         </div>
         <!-- Formulaire de recherche (initialement caché) -->
         <form id="searchForm" style="display: none;">
@@ -65,9 +70,7 @@
             </div>
             <i id="message"></i>
         </form>
-       
         <div class="line"></div>
-
         <ul>
             <li><a href="#" class="lien" class="nav-item active" data-contenu="accueil">Accueil</a></li>
             <li><a href="#" class="lien" data-contenu="societe">Société</a></li>
@@ -90,9 +93,7 @@
         </ul>
         <!-- icone "Log In" -->
         <hr>
-        <a href="inscription.html" class="login-button">
-            <i class="fas fa-user"></i>
-        </a>
+    
         <div class="navbar_content">
             <i class="bi bi-grid"></i>
             <i class='bx bx-sun' id="darkLight"></i>
@@ -105,17 +106,18 @@
 
     <main>
         <div id="contenu_accueil" class="contenu" style="display: block;">
-            <!-- Content -->
-            <div class="container mt-4">
-                <div class="jumbotron">
-                    <h1 class="display-4">Bienvenue sur Addicted Press</h1><br>
-                    <p class="lead">Le Média des vraies Infos Utiles <br>
-                        Restez informé avec nos dernières actualités.</p>
-                    <hr class="my-4">
-                    <p>Explorez nos articles sur des sujets variés.</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Lire les dernières actualités</a>
-                </div>
-            </div>
+           <!-- Content -->
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenue sur Addicted Press</h1><br>
+        <p class="lead">Le Média des vraies Infos Utiles <br>
+            Restez informé avec nos dernières actualités.</p>
+        <hr class="my-4">
+        <p>Explorez nos articles sur des sujets variés.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Lire les dernières actualités</a>
+    </div>
+</div>
+
         </div>
 
         <div id="contenu_societe" class="contenu" style="display: none;">
@@ -202,7 +204,7 @@
             <a href="mailto:Kpierrelouis1997@gmail.com"><i class="fas fa-envelope"></i>Kpierrelouis1997@gmail.com</a>
             <a href="http://googlemaps.com"><i class="fas fa-map-marker"></i>Santiago </a>
         </div>
-        <div class="container">
+        <div class="cont">
             &copy; <span id="currentYear"></span> Addicted Press. Tous droits réservés.
         </div>
         <div class="social-icons">

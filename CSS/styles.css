@@ -1,16 +1,3 @@
-body {
-  font-family: Arial, sans-serif;
-  /* Police de caractères par défaut */
-  line-height: 1.6;
-  /* Hauteur de ligne pour une meilleure lisibilité */
-  padding: 0;
-  /* Supprime les espacements internes par défaut */
-  background-color: #f7f7f7;
-  /* Couleur de fond */
-  color: #333;
-  /* Couleur de texte principale */
-  overflow-x: hidden;
-}
 
 /* Import Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
@@ -52,27 +39,6 @@ body.dark {
 
 }
 
-.login-button {
-  margin-bottom: 50px;
-  display: flex;
-  margin-left: 30px;
-  /* Décalage vers la droite */
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  width: 50px;
-  /* Définir une largeur fixe pour le bouton */
-  height: 50px;
-  /* Définir une hauteur fixe pour le bouton */
-  border: 2px solid #333;
-  border-radius: 50%;
-  background-color: red;
-}
-
-.login-button .fas.fa-user {
-  color: #333;
-  font-size: 20px;
-}
 
 
 .sub-menu {

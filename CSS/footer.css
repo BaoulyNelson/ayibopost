@@ -3,6 +3,8 @@
     color: white;
     overflow-x: hidden;
     margin-top: 50px;
+    padding: 10px 0;
+    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
@@ -38,6 +40,9 @@
     display: flex;
     flex-direction: column;
     color: white;
+    justify-content: center;
+    padding: 0 20px;
+    font-size: 14px;
   }
 
   .contact-info a {
@@ -60,8 +65,5 @@
   main {
     padding-bottom: 60px; /* Ajustez la valeur en fonction de la hauteur de votre footer */
   }
-  /* Ajoute un padding en bas à la classe .sub-menu sur les petits écrans */
-  .login-button {
-    padding-bottom: 20px; /* Ajustez la valeur selon vos besoins */
-  }
+
 }
