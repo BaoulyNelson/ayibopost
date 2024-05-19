@@ -1,92 +1,74 @@
-.search-icon {
+/* Styles de base pour le conteneur de l'icône */
+#searchIcon {
+    margin-left: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    margin-left: 20px; /* Ajoute du padding à gauche des liens */
-    background-color: #007bff; /* Couleur de fond de l'icône */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de relief */
+    background-color: #007BFF; /* Couleur de fond */
+    border-radius: 50%; /* Forme circulaire */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition pour les effets */
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.search-icon i {
-    color: #fff; /* Couleur de l'icône */
-}
-
-.search-icon:hover {
+  }
+  
+  /* Styles pour l'icône */
+  #searchIcon i {
+    color: #ffffff; /* Couleur de l'icône */
+    transition: color 0.3s; /* Transition pour la couleur */
+  }
+  
+  /* Effet au survol */
+  #searchIcon:hover {
     background-color: #0056b3; /* Couleur de fond au survol */
-    transform: scale(1.1); /* Effet de zoom au survol */
-}
-#searchForm {
-    display: none;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 10px;
-    border: 2px solid #007BFF;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-#searchForm div {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-#mySearch {
-    flex: 1;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-#searchForm button {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007BFF;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#searchForm button:hover {
-    background-color: #0056b3;
-}
-
-/* Media Queries for smaller screens */
-@media (max-width: 600px) {
-    #searchForm {
-        max-width: 100%;
-        padding: 8px;
-    }
-    
-    #searchForm div {
-        flex-direction: column;
-        gap: 10px;
-    }
-    
-    #mySearch {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-    }
-    
-    #searchForm button {
-        width: auto; /* Ensure the button does not stretch to 100% width */
-        padding: 10px;
-        font-size: 16px;
-        align-self: flex-end; /* Align button to the end of the container */
-    }
-}
-
+    transform: scale(1.1); /* Agrandissement au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre portée plus forte */
+  }
+  
+  #searchIcon:hover i {
+    color: #e0e0e0; /* Couleur de l'icône au survol */
+  }
+  
+  
+  .logo-right {
+    position: absolute;
+    top: -20px; /* Déplace l'image vers le haut */
+    right: 10px; /* Ajuste la position horizontale */
+    width: 80px; /* Ajuste la largeur de l'image */
+    height: auto; /* Maintient le ratio de l'image */
+  }
+  
+  
+  #searchForm {
+    display: block; /* Afficher le formulaire */
+    margin-bottom: 20px; /* Ajouter un espace en bas du formulaire */
+    margin-left: 20px; /* Ajouter un décalage vers la droite */
+  
+  }
+  
+  input[type="search"] {
+    width: 200px; /* Définir une largeur pour le champ de recherche */
+    padding: 8px; /* Ajouter un peu d'espace à l'intérieur du champ */
+    border: 1px solid #ccc; /* Ajouter une bordure */
+    border-radius: 5px; /* Arrondir les coins */
+    font-size: 16px; /* Définir une taille de police */
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Supprimer la bordure */
+    padding: 8px 16px; /* Ajouter de l'espace intérieur */
+    border-radius: 5px; /* Arrondir les coins */
+    cursor: pointer; /* Utiliser un curseur de type pointeur */
+    font-size: 16px; /* Définir une taille de police */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+  }
+  
  /* Style pour le message de recherche */
  #message {
     color: red;
